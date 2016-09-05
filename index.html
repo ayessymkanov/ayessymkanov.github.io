@@ -1,23 +1,30 @@
 ---
-layout: default
 ---
 
-<div class="home">
+{% include head.html %}
 
-  <h1 class="page-heading">Posts</h1>
+<body>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <div class="container container--full">
+    <div class="row">
+      <div class="column column-2 column--stretch column--height-100 column--vert-center column--hor-center">
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+        <div class="content-container">
+          <img src="http://placehold.it/150x150" alt="">
+          <h1 class="home-title">Hi! My name's <span>Arman Yessymkanov</span></h1>
+          <h2 class="home-subtitle">I'm pretending to to be a frontend developer</h2>
+        </div>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+      </div>
+      <div class="column column-3 column--height-100 column--vert-center column--m-hide">
+        <div class="content-container">
+          <a href="#" class="menu-link">BLOG</a>
+          <a href="#" class="menu-link">WORKS</a>
+          <a href="#" class="menu-link">ABOUT ME</a>
+          <a href="#" class="menu-link">CONTACT ME</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-</div>
+</body>
