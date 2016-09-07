@@ -2,3 +2,26 @@
   height: 7em
   background: $my_grey
   margin-bottom: 20px
+  position: relative
+
+.menu-btn
+  position: absolute
+  top: 50%
+  left: 20px
+  transform: translateY(-50%)
+
+  @media(max-width: 800px)
+    left: 10px
+
+.page-title
+  position: absolute
+  bottom: 0
+  right: 20px
+  font-size: 3em
+  font-family: "Fira Sans"
+  color: white
+  text-transform: uppercase
+  text-shadow: 5px 5px 1px #444
+
+  @media(max-width: 800px)
+    right: 10px
