@@ -212,11 +212,9 @@ pre {
 @keyframes fadeIn {
   0%{
     opacity: 0;
-    transform: translateY(30%);
   }
   100% {
     opacity: 1;
-    transform: translateY(0%);
   }
 }
 body {
@@ -225,12 +223,7 @@ body {
   animation-duration: 0.5s;
   transition-timing-function: ease-in-out;
   animation-fill-mode: forwards;
-  overflow: hidden;
 }
 li {
   list-style-type: none;
-}
-
-.page-content {
-  min-height: calc(100vh - 335px)
 }
