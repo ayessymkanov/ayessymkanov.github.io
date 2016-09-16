@@ -9,21 +9,25 @@ subtitle: works
   {% include header.html %}
 
   <div class="container">
-    <div class="row" style="border: 1px solid black;">
-      {% for work in site.categories.works1 %}
-      <div class="column column-3 column__gutter" style="border: 1px solid red;">
-        <a href="{{work.url}}"></a>
-        {{work.category}}
-      </div>
-      {% endfor %}
-    </div>
     <div class="row">
-      {% for work in site.categories.works2 %}
-      <div class="column column-3 column__gutter">
-        <a href="{{work.url}}"></a>
-        {{work.category}}
+      <div class="column column--12-of-12">
+
+        <ul class="works-list">
+
+          {% for work in site.categories.work %}
+
+            <li class="work">
+              <a href="{{work.url}}" class="work__link">
+                <img src="{{work.link}}" alt="" class="work__image">
+                <h4 class="work__title">{{work.title}}</h4>
+              </a>
+            </li>
+
+          {% endfor %}
+        </ul>
+
       </div>
-      {% endfor %}
+    </div>
   </div>
 
 </body>

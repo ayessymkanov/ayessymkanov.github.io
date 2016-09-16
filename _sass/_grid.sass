@@ -1,3 +1,5 @@
+$gutter: 1.5em
+
 *
   box-sizing: border-box
 .container
@@ -5,70 +7,83 @@
   max-width: 100%
   margin: 0 auto
 
-.container__full
+.container--full
   width: 100%
+//--------------------------------
+//ROWS
+//--------------------------------
 
 .row
   display: flex
   align-items: flex-start
   margin-bottom: 1.5em
-.row__stretch
+.row--stretch
   align-items: stretch
+
+.row--m-full
+  flex-wrap: wrap
+
+//--------------------------------
+// COLUMNS
+//--------------------------------
 
 .column
   &:last-child
     margin-right: 0
-.column-1
-  width: 100%
-.column-2
-  width: 50%
-.column-3
-  width: 33.33333333333%
-.column-2-3
-  width: 66.6666666666667%
-.column-4
-  width: 25%
-.column-5
-  width: 20%
-.column-6
-  width: 16.6666667%
 
-.column-1-12
+.column--1-of-12
   width: 8.333333333%
-.column__vert-center
+.column--2-of-12
+  width: 16.666666667%
+.column--3-of-12
+  width: 25%
+.column--4-of-12
+  width: 33.33333%
+.column--5-of-12
+  width: 41.666666667%
+.column--6-of-12
+  width: 50%
+.column--12-of-12
+  width: 100%
+
+.column--stretch
+  flex-basis: auto
+  flex-grow: 1
+.column--vert-center
   display: flex
   align-items: center
-.column__hor-center
+.column--hor-center
   display: flex
   justify-content: center
-.column__height-100
+.column--height-100
   min-height: 100vh
-.column__flex
+.column--flex
   display: flex
 
-.column__gutter
-  margin-right: 1.5em
+.column--gutter
+  margin-right: $gutter
 
   &:last-child
     margin-right: 0
-.column__no-padding
+.column--no-padding
   padding: 0
 
 .column > img
   width: 100%
   height: auto
 
-.column__stretch
-  flex-basis: auto
-  flex-grow: 1
 
-.column__ta__left
+.column--ta__left
   text-align: left
-.column__ta__right
+.column--ta__right
   text-align: right
-.column__ta__center
+.column--ta__center
   text-align: center
 
-.column__m-hide
+.column--m-hide
   @media(max-width: 800px)
     display: none
+
+.column--m-full
+  @media(max-width: 800px)
+    width: 100%

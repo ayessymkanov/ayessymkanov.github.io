@@ -11,13 +11,13 @@ subtitle: blog
   {% include header.html%}
   <div class="container">
     <div class="row">
-      <div class="column column-1 column__hor-center">
-        <div class="content-container">
-          {% for post in site.posts %}
+      <div class="column column--12-of-12 column--hor-center">
+        <div class="text-container">
+          {% for post in site.categories.blog %}
           <div class="post">
             <a class="post__title" href="{{post.url}}">{{post.title}}</a>
             <h4 class="post__date">{{post.date | date: '%B %d, %Y'}}</h4>
-            <p class="post-__description">{{post.description}}</p>
+            <p class="post__description">{{post.description}}</p>
           </div>
           {% endfor %}
         </div>
