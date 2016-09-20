@@ -10,11 +10,18 @@
   border: 2px solid $my_grey
   margin-bottom: 10px
 
+  @media(max-width: 600px)
+    width: 200px
+
 .home-title, .home-subtitle
   font: 2.5em/1.5 "Fira Sans", Arial, sans-serif
 
 .home-subtitle
   font-size: 2em
+
+@media(max-width: 600px)
+  .home-title, .home-subtitle
+    font-size: 2em
 
 .home-title span
   background: $my_grey
@@ -47,3 +54,35 @@
     color: white
   &:visited
     color: white
+
+.social-link
+  display: inline-block
+  width: 3em
+  height: 3em
+  margin-right: 10px
+  > svg
+    width: 100%
+    height: auto
+    fill: black
+
+.mobile-nav
+  position: absolute
+  bottom: 0
+  display: none
+  width: 100%
+  height: 60px
+  @media(max-width: 800px)
+    display: flex
+
+  &__item
+    flex: 1 25%
+    line-height: 60px
+    text-align: center
+    color: white
+    font-size: 1.25em
+    background-color: $my_grey
+    border-right: 1px solid white
+    &:visited,
+    &:link
+      color: white
+      text-decoration: none

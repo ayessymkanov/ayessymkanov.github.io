@@ -2,35 +2,38 @@
 title: AY | Works
 subtitle: works
 ---
-{% include head.html %}
+<html>
 
-<body>
+  {% include head.html %}
 
-  {% include header.html %}
+  <body>
 
-  <div class="container">
-    <div class="row">
-      <div class="column column--12-of-12">
+    {% include header.html %}
 
-        <ul class="works-list">
+    <div class="container">
+      <div class="row">
+        <div class="column column--12-of-12">
 
-          {% for work in site.categories.work %}
+          <ul class="works-list">
 
-            <li class="work">
-              <a href="{{work.url}}" class="work__link">
-                <div class="work__image">
-                  <img src="{{work.link}}" alt="" class="">
-                  <div class="overlay"><span class="see-more">See more</span></div>
-                </div>
-                <h4 class="work__title">{{work.title}}</h4>
-              </a>
-            </li>
+            {% for work in site.categories.work %}
 
-          {% endfor %}
-        </ul>
+              <li class="work">
+                <a href="{{work.url}}" class="work__link">
+                  <div class="work__image">
+                    <img src="{{work.link}}" alt="" class="">
+                    <div class="overlay"><span class="see-more">See more</span></div>
+                  </div>
+                  <h4 class="work__title">{{work.title}}</h4>
+                </a>
+              </li>
 
+            {% endfor %}
+          </ul>
+
+        </div>
       </div>
     </div>
-  </div>
 
-</body>
+  </body>
+</html>

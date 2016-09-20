@@ -6,6 +6,9 @@
   width: -webkit-fit-content
   width:         fit-content
   list-style-type: none
+  @media(max-width: 400px)
+    width: 100%
+    padding: 0 20px
 
 .work
   display: inline-block
@@ -30,6 +33,9 @@
   @media(max-width: 800px)
     width: calc(50% - 20px)
 
+  @media(max-width: 400px)
+    width: 100%
+
 @media(max-width: 800px)
   .work:nth-child(even)
     margin-right: 0
@@ -44,6 +50,7 @@
   margin: 0
   padding: 10px 0
   color: $my_grey
+  font-weight: 600
 
 .work__image
   position: relative
