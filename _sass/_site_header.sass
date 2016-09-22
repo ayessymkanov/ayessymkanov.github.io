@@ -7,19 +7,31 @@
 .menu-btn
   position: absolute
   top: 50%
-  left: 20px
+  left: 50px
   transform: translateY(-50%)
+  &:link,
+  &:visited,
+  &:active
+    color: white
+  &:hover
+    text-decoration: none
 
   @media(max-width: 800px)
     left: 10px
+
+  > svg
+    width: 100%
+    display: block
+
+
 
 .page-title
   position: absolute
   top: 50%
   transform: translateY(-50%)
-  right: 20px
+  right: 50px
   font-size: 3em
-  font-family: "Fira Sans"
+  font-family: "Fira Sans", sans-serif
   color: white
   text-transform: uppercase
   text-shadow: 5px 5px 1px #444
