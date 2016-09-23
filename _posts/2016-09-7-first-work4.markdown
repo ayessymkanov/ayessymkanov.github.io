@@ -1,6 +1,6 @@
 ---
 title: First work
-layout: default
+layout: work
 date:   2016-09-07 11:20:18
 category: work
 link: https://d13yacurqjgara.cloudfront.net/users/31752/screenshots/1594741/mountains.png

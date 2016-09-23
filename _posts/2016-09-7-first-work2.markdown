@@ -1,6 +1,6 @@
 ---
 title:  works1
-layout: default
+layout: work
 date:   2016-09-07 11:20:18
 category: work
 link: https://d13yacurqjgara.cloudfront.net/users/485324/screenshots/1581316/fireart_blog.jpg

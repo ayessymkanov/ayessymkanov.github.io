@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: work
 title:  "Motivation to start a blog"
 date:   2016-08-27 22:11:18 -0700
 categories: blog

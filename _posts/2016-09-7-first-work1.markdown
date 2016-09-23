@@ -1,6 +1,6 @@
 ---
 title: Kazakhstan Robotics Challenge
-layout: default
+layout: work
 date:   2016-09-07 11:20:18
 category: work
 link: https://d13yacurqjgara.cloudfront.net/users/3460/screenshots/1089675/mcfly_gear_2013.png
