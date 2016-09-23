@@ -20,3 +20,5 @@ permalink: pretty
 
 # Build settings
 markdown: kramdown
+
+disqus: ayessymkanov
