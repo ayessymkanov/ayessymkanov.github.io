@@ -23,6 +23,13 @@
   .home-title, .home-subtitle
     font-size: 2em
 
+@media(max-height: 500px)
+  .home-title, .home-subtitle
+    font-size: 1.5em
+
+  .home-image
+    width: 150px
+
 .home-title span
   background: $my_grey
   color: white
@@ -60,6 +67,10 @@
   width: 3em
   height: 3em
   margin-right: 10px
+
+  @media(max-width: 600px)
+    width: 2em
+    height: 2em
   > svg
     width: 100%
     height: auto
