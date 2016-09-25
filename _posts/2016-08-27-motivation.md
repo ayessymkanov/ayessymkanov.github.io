@@ -4,6 +4,7 @@ title:  "Motivation to start a blog"
 date:   2016-08-27 22:11:18 -0700
 categories: blog
 description: A small introduction to why am I starting blogging and other thoughts out loud.  
+subtitle: blog
 ---
 
 {:.text}
