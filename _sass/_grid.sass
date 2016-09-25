@@ -35,6 +35,9 @@ $gutter: 1.5em
 
 .column
   margin-right: 10px
+
+  @media(max-width: 600px)
+    margin-right: 0
   &:last-child
     margin-right: 0
 
@@ -52,6 +55,17 @@ $gutter: 1.5em
   width: 50%
 .column--12-of-12
   width: 100%
+
+.column--2-of-12,
+.column--3-of-12,
+.column--4-of-12,
+.column--5-of-12,
+.column--6-of-12
+  @media(max-width: 600px)
+    width: 100%
+    margin-bottom: 10px
+
+
 
 .column--stretch
   flex-basis: auto
