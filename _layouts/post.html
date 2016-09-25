@@ -7,18 +7,19 @@ layout: default
 <div class="container">
   <div class="row">
     <div class="column column--12-of-12">
+      <header>
+        <img src="{{page.link}}" alt="" class="post-image">
+      </header>
       <div class="text-container">
-        <header>
-          <h1>{{page.title}}</h1>
-        </header>
+
         <section class="post-content">
           {{content}}
         </section>
 
         {% include comments.html %}
-
+        {% include footer.html %}
       </div>
     </div>
   </div>
-  {% include footer.html %}
+
 </div>
