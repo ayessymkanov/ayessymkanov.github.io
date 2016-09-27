@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Motivation to start a blog"
-date:   2016-08-27 6:10:18 -0700
+date:   2016-09-27 6:10:18 -0700
 categories: blog
 description: A small introduction to why am I starting blogging and other thoughts out loud.  
 subtitle: blog
